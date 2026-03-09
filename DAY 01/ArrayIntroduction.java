@@ -15,6 +15,8 @@ public class ArrayIntroduction {
 
         /*
          * leetcode 1929
+         * * Data Structure Used:Array
+         * Concept Used:Array traversal,Index manipulation.
          * // Array declaration
          * int[] nums;
          * // Array length property
@@ -30,6 +32,37 @@ public class ArrayIntroduction {
          * ans[i + n] = nums[i];
          * // Return statement
          * return ans;
+         * 
+         * Important DSA Pattern:
+         * Array Concatenation Pattern
+         * ans[i] = nums[i]
+         * ans[i + n] = nums[i]
+         */
+
+        /*
+         * leetcode 1480
+         * Data Structure Used: Array
+         * Concept Used: Array traversal, Prefix Sum (Running Sum), Index-based access.
+         * // Array declaration
+         * int[] nums;
+         * // Array length property
+         * int n = nums.length;
+         * // Array creation using new keyword
+         * int[] runningSum = new int[n];
+         * // Array indexing
+         * nums[i]
+         * // Initializing first element
+         * runningSum[0] = nums[0];
+         * // For loop for array traversal
+         * for (int i = 1; i < n; i++)
+         * // Prefix sum / running sum calculation
+         * runningSum[i] = runningSum[i - 1] + nums[i];
+         * // Return statement
+         * return runningSum;
+         * 
+         * Important DSA Pattern:
+         * Prefix Sum Pattern
+         * prefix[i] = prefix[i-1] + nums[i]
          */
     }
 }
