@@ -1,4 +1,4 @@
-// ARRAY INTRODUCTION
+// What Are Arrays
 /*
  * An Array is a collection of elements stored in contiguous memory locations.
  * All elements must have the same data type.

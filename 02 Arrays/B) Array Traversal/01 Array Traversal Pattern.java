@@ -1,0 +1,88 @@
+/*
+ * // ARRAY TRAVERSAL PATTERN
+ * 
+ * 1️⃣ What is Array Traversal?
+ * 
+ * Traversal means visiting every element of the array exactly once.
+ * If array is:
+ * nums = [10, 20, 30, 40]
+ * Traversal means:
+ * visit 10
+ * visit 20
+ * visit 30
+ * visit 40
+ * In Java, this is done using loops.
+ * 
+ * 2️⃣ Why Traversal is Important?
+ * 
+ * Because almost EVERY array problem starts with:
+ * for (i = 0 → n-1)
+ * Traversal is the foundation of arrays.
+ * Without mastering traversal:
+ * No searching
+ * No counting
+ * No prefix sum
+ * No sliding window
+ * No two pointers
+ * Everything builds on traversal.
+ * 
+ * 3️⃣ Types of Traversal in Java
+ * 
+ * A) Using Normal For Loop (Most Important)
+ * Pattern:
+ * for (int i = 0; i < n; i++)
+ * This gives:
+ * index access
+ * ability to modify array
+ * control over direction
+ * This is the most important traversal style in DSA.
+ * 
+ * B) Enhanced For Loop (For-each)
+ * Pattern:
+ * for (int num : nums)
+ * This gives:
+ * direct value
+ * no index
+ * cannot modify index-based logic
+ * Good for:
+ * printing
+ * counting
+ * Not good for:
+ * index manipulation problems
+ * 
+ * 4️⃣ Forward vs Backward Traversal
+ * 
+ * Forward:
+ * i = 0 → n-1
+ * 
+ * Backward:
+ * i = n-1 → 0
+ * 
+ * Used in:
+ * reversing
+ * certain comparisons
+ * 
+ * 5️⃣ What Can We Do During Traversal?
+ * 
+ * Traversal allows us to:
+ * ✔ Print elements
+ * ✔ Count elements
+ * ✔ Find max/min
+ * ✔ Search for element
+ * ✔ Modify values
+ * ✔ Build new array
+ * 
+ * 6️⃣ Time Complexity of Traversal
+ * 
+ * If array size = n
+ * Time Complexity = O(n)
+ * Because we visit each element once.
+ * 
+ * 7️⃣ Core Traversal Pattern Template
+ * 
+ * Mentally memorize this:
+ * int n = nums.length;
+ * for (int i = 0; i < n; i++) {
+ * // do something with nums[i]
+ * }
+ */
