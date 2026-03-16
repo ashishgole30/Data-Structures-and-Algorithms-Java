@@ -1,0 +1,74 @@
+// Build the prefix array for this:
+// nums = [5,2,7,1]
+
+/*
+ * STEPS:
+ * 1.Take input array
+ * 2.Find out length of input array
+ * 3.Create new prefix array of same length as input array
+ * 4.Set first element
+ * prefix[0] = nums[0]
+ * 5.Traverse from index 1 to n-1
+ * 6.Add current number to previous prefix sum
+ * prefix[i] = prefix[i-1] + nums[i]
+ * 7.Print the prefix array
+ */
+
+// 1.Take input array
+int[]nums={5,2,7,1};
+// 2.Find out length of input array
+int n=nums.length;
+// 3.Create new prefix array of same length as input array
+int[]prefixarray=new int[n];
+// 4.Set first element prefix[0] = nums[0]
+prefixarray[0]=nums[0];
+// 5. Traverse from index 1 to n
+// NOTE :- We start from index 1 because index 0 is already set.
+for(int i=1;i<n;i++){
+// 6.Add current number to previous prefix sum
+// prefix[i] = prefix[i-1] + nums[i]
+prefixarray[i]=prefixarray[i-1]+nums[i];}
+// 7.Print the prefixarray
+for(int output:prefixarray){System.out.print(output+" ");}
+
+/*
+ * 8. Dry Run
+ * nums = {5, 2, 7, 1}
+ * index = {0,1,2,3}
+ * n = 4 = 4 elements in array nums
+ * prefix array initialized of same length 4
+ * prefixarray ={0,0,0,0};
+ * prefixarray[0] = nums[0]
+ * so prefixarray at index 0 = value of nums array at index of 0
+ * so prefixarray = [5, 0, 0, 0]
+ * loop starts from i = 1 (since index 0 value is already set)
+ * to i<n = 1<4 , thus i = 1,2,3
+ * 
+ * iteration 1: i = 1
+ * formula: prefixarray[i] = prefixarray[i-1] + nums[i]
+ * prefixarray[1] = prefixarray[1-1 = 0] + nums[1]
+ * prefixarray[1] = 5 + 2 = 7
+ * prefixarray[1] = 7
+ * prefixarray ={5,7,0,0};
+ * 
+ * iteration 1: i = 2
+ * formula: prefixarray[i] = prefixarray[i-1] + nums[i]
+ * prefixarray[2] = prefixarray[2-1 = 1] + nums[2]
+ * prefixarray[2] = 7 + 7 = 14
+ * prefixarray[2] = 14
+ * prefixarray ={5,7,14,0};
+ * 
+ * iteration 1: i = 3
+ * formula: prefixarray[i] = prefixarray[i-1] + nums[i]
+ * prefixarray[3] = prefixarray[3-1 = 2] + nums[3]
+ * prefixarray[3] = 14 + 1 = 15
+ * prefixarray[3] = 15
+ * prefixarray ={5,7,14,15};
+ * 
+ * nums = {5,2,7,1}
+ * 5
+ * 5+2 = 7
+ * 5+2+7 = 14
+ * 5+2+7+1 =15
+ * 
+ */
