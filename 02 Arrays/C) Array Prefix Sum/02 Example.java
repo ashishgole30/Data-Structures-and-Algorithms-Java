@@ -14,22 +14,24 @@
  * 7.Print the prefix array
  */
 
-// 1.Take input array
-int[]nums={5,2,7,1};
-// 2.Find out length of input array
-int n=nums.length;
-// 3.Create new prefix array of same length as input array
-int[]prefixarray=new int[n];
-// 4.Set first element prefix[0] = nums[0]
-prefixarray[0]=nums[0];
-// 5. Traverse from index 1 to n
-// NOTE :- We start from index 1 because index 0 is already set.
-for(int i=1;i<n;i++){
-// 6.Add current number to previous prefix sum
-// prefix[i] = prefix[i-1] + nums[i]
-prefixarray[i]=prefixarray[i-1]+nums[i];}
-// 7.Print the prefixarray
-for(int output:prefixarray){System.out.print(output+" ");}
+/*
+ * 1.Take input array
+ * int[]nums={5,2,7,1};
+ * // 2.Find out length of input array
+ * int n=nums.length;
+ * // 3.Create new prefix array of same length as input array
+ * int[]prefixarray=new int[n];
+ * // 4.Set first element prefix[0] = nums[0]
+ * prefixarray[0]=nums[0];
+ * // 5. Traverse from index 1 to n
+ * // NOTE :- We start from index 1 because index 0 is already set.
+ * for(int i=1;i<n;i++){
+ * // 6.Add current number to previous prefix sum
+ * // prefix[i] = prefix[i-1] + nums[i]
+ * prefixarray[i]=prefixarray[i-1]+nums[i];}
+ * // 7.Print the prefixarray
+ * for(int output:prefixarray){System.out.print(output+" ");}
+ */
 
 /*
  * 8. Dry Run
@@ -70,5 +72,4 @@ for(int output:prefixarray){System.out.print(output+" ");}
  * 5+2 = 7
  * 5+2+7 = 14
  * 5+2+7+1 =15
- * 
  */

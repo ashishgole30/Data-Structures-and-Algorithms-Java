@@ -1,0 +1,1 @@
+/* Summary Of patterns of two pointers */
